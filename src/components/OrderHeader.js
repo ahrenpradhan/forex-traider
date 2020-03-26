@@ -19,7 +19,7 @@ export default (props) => (
             className={getButtonClass("OrderHistory",props.option)}
             onClick={() => props.handleHeaderButtons("OrderHistory")}
         >
-            Nad Order
+            Order History
         </button>
     </div>
 )

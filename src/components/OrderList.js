@@ -8,183 +8,182 @@ export default class OrderList extends React.Component{
         maxPage : null,
         fetchedData : [
             {
-                Name : 'abc',
+                Name : 'abc1',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc2',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc3',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc4',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc5',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc6',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc7',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc8',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc9',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc10',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc11',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc12',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc13',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc14',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc15',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc16',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc17',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc18',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc19',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc20',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc21',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc22',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc23',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc24',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },{
-                Name : 'abc',
+                Name : 'abc25',
                 Qty : 1,
                 AvgPrice : '1$',
                 PL : 1,
                 Status : 'open',
                 Date : '1'
             },
-        ],
-        focusedData : null
+        ]
     };
     componentWillMount(){
         if(this.state.maxPage == null){
@@ -214,8 +213,9 @@ export default class OrderList extends React.Component{
                     {
                         this.state.page == "OpenOrder" && 
                         <OrderBody 
-                            data={this.state.fetchedData} 
+                            data={this.state.fetchedData.slice(this.state.currentPage*5,(this.state.currentPage*5)+5)} 
                             label={"Open Order"}
+                            currentPage={this.state.currentPage}
                         />
                     }
                     {
@@ -263,32 +263,34 @@ export default class OrderList extends React.Component{
 
 const OrderBody = (props) => (
     <div>
-        <h2>{props.label}</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>Sr no.</td>
-                    <td>Name</td>
-                    <td>Qty</td>
-                    <td>Avg.Price</td>
-                    <td>Profit/Loss</td>
-                    <td>Status</td>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    props.data.map((e,i)=>(
-                        <tr key={e+i}>
-                            <td>{i+1}</td>
-                            <td>{e.Name}</td>
-                            <td>{e.Qty}</td>
-                            <td>{e.AvgPrice}</td>
-                            <td>{e.PL}</td>
-                            <td>{e.Status}</td>
-                        </tr>
-                    ))
-                }
-            </tbody>
+        {/* <h2>{props.label}</h2> */}
+        <table className="Order--Body__table">
+            <center>
+                <thead>
+                    <tr>
+                        <th>Sr no.</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Avg.Price</th>
+                        <th>Profit/Loss</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        props.data.map((e,i)=>(
+                            <tr key={e+i}>
+                                <td>{(props.currentPage*5)+i+1}</td>
+                                <td>{e.Name}</td>
+                                <td>{e.Qty}</td>
+                                <td>{e.AvgPrice}</td>
+                                <td>{e.PL}</td>
+                                <td>{e.Status}</td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </center>
         </table>
     </div>
 )

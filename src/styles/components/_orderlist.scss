@@ -16,3 +16,25 @@
     color: black;
     opacity: 30%;
 }
+
+.Order--Body__table{
+    padding-right: $l-size;
+    thead{
+        margin-bottom: $m-size;
+        font-weight: 700;
+        tr{
+            th{
+                padding: $xs-size $l-size;
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+    tbody{
+        tr{
+            margin: $xs-size;
+            td{
+                padding: $xs-size $m-size;
+            }
+        }
+    }
+}
