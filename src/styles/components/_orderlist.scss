@@ -1,0 +1,18 @@
+.OrderList--paginationbutton {
+    border: none;
+    padding: $xs-size $m-size;
+    background: lighten($dark-blue,70);
+    color: black;
+}
+.OrderList--paginationbutton:hover {
+    background: lighten($dark-blue,63);
+    opacity: 70%;
+}
+
+.OrderList--paginationbutton__selected {
+    border: none;
+    padding: $xs-size $m-size;
+    background: lighten($dark-blue,70);
+    color: black;
+    opacity: 30%;
+}
