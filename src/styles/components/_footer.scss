@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: darken($light-blue, 0);
+    color: white;
+}
+
+.footer__title {
+    width: 100%;
+    font-size: $m-size;
+    text-align: center;
+    margin-left: $l-size;
+}

@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: $light-blue;
+    color: white;
+    border: none;
+    border-bottom: 5px solid darken($light-blue, 5);
+    // margin-bottom: $xl-size;
+}
+
+.header__title {
+    margin-left: $l-size;
+}
+
+.header__navbar {
+    border: none;
+}
+
+.header__button {
+    font-size: $m-size;
+    font-weight: 600;
+    height: 100%;
+    border: none;
+    padding: 0 $xl-size;
+    background: darken($light-blue, 5);
+    color: white;
+}
+
+.header__button:hover {
+    font-weight: 600;
+    background: darken($light-blue, 10);
+    border-bottom: 5px solid darken($light-blue, 15);
+}
+
+.header__button__selected {
+    font-weight: 600;
+    background: darken($light-blue, 10);
+    border-bottom: 5px solid darken($light-blue, 15);
+}

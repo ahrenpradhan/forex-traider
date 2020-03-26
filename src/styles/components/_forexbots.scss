@@ -1,0 +1,95 @@
+.forexbots {
+    display: grid;
+}
+
+.forexbots--container {
+    width: 100&;
+    display: flex;
+    margin-bottom: $l-size;
+    padding: $xs-size;
+}
+
+.forexbots--container__half {
+    border: 1px solid black;
+    float: left;
+    width: 50%;
+    padding: $xs-size;
+}
+
+.flexedContainer {
+    display: flex;
+}
+
+.forex--container__block {
+    width: 116rem;
+}
+
+.forexbots--container2 {
+    float: left;
+    display: flex;
+    width: 70%;
+    overflow: scroll;
+    margin-bottom: $l-size;
+    overflow-y: auto;
+}
+
+.forebots--container__small {
+    padding: $xs-size;
+    float: left;
+    // min-width: 20%;
+    // border: 1px solid rgb(172, 118, 118);
+    margin: $m-size;
+}
+
+.forex--addbutton__container {
+    width: 30%;
+    height: 27rem;
+    float: left;
+    padding: $l-size;
+    text-overflow: clip;
+}
+
+.forex--addbutton {
+    height: 100%;
+    width: 100%;
+}
+
+.forexbots--container23 {
+    border: 1px solid black;
+    width: 66%;
+    padding: $xs-size;
+}
+
+.forexbots--container13 {
+    border: 1px solid black;
+    width: 34%;
+    padding: $xs-size;
+}
+
+.forex__buttonholder {
+    width: 100%;
+}
+
+.forexbots--start_stop__button {
+    width: 20rem;
+    height: 4rem;
+    margin: $xs-size auto;
+    font-weight: 700;
+    color: white;
+}
+
+.red {
+    background: rgba(255, 0, 0, 0.55);
+}
+
+.red:hover {
+    background: darken(rgba(255, 0, 0, 0.55), 20);
+}
+
+.green {
+    background: rgb(74, 202, 48);
+}
+
+.green:hover {
+    background: darken(rgb(74, 202, 48), 7);
+}
