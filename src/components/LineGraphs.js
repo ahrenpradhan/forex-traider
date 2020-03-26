@@ -16,22 +16,22 @@ export default class App extends Component {
         }
       },
       series: [
-        {
-          name:'low',
-          data: props.data.low
-        },
-        {
-          name:'high',
-          data: props.data.high
-        },
+        // {
+        //   name:'low',
+        //   data: props.data.low
+        // },
+        // {
+        //   name:'high',
+        //   data: props.data.high
+        // },
         {
           name:'close',
           data: props.data.close
         },
-        {
-          name:'open',
-          data: props.data.open
-        }
+        // {
+        //   name:'open',
+        //   data: props.data.open
+        // }
       ]
     };
   }

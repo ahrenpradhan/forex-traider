@@ -1,0 +1,8 @@
+.Order--header__button {
+    border: none;
+    padding: $xs-size $m-size;
+}
+
+.Order--header__button__selected {
+    background: lighten(grey,20);
+}
